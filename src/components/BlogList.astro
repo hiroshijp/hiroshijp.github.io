@@ -1,0 +1,36 @@
+---
+//microCMS呼び出し
+import { getBlogs, type Blog } from "../lib/microcms";
+const response = await getBlogs({
+    fields: ["id", "publishedAt", "title", "tag"],
+});
+---
+
+<div class="my-5 mx-10">
+    {
+        response.contents.map((content: Blog) => (
+            <>
+                <a href={content.id}>
+                    <div class="w-50 bg-transparent">
+                        <div class="p-2">
+                            <div class="text-neutral text-xs">
+                                {
+                                    new Date(content.publishedAt)
+                                        .toISOString()
+                                        .split("T")[0]
+                                }
+                            </div>
+                            <div class="flex flex-row justify-between items-center">
+                                <div class="text-xl">{content.title}</div>
+                                <div class="badge badge-primary">
+                                    {content.tag}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <div class="divider mt-0 mb-2" />
+            </>
+        ))
+    }
+</div>

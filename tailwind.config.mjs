@@ -4,5 +4,25 @@ export default {
 	theme: {
 		extend: {},
 	},
-	plugins: [],
+	plugins: [
+		require('@tailwindcss/typography'),
+		require("daisyui"),
+	],
+	daisyui: {
+		themes: [
+			{
+				mytheme: {
+					"primary": "#1f245e",
+					"secondary": "#dbeafe",
+					"accent": "#111827",
+					"neutral": "#a8a29e",
+					"base-100": "#d7cfc7",
+					"info": "#ffffff",
+					"success": "green",
+					"warning": "yellow",
+					"error": "red",
+				},
+			},
+		],
+	},
 }
