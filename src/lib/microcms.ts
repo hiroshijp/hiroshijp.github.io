@@ -19,6 +19,7 @@ export type Blog = {
         "cooking" |
         "exercise" |
         "subculture" |
+        "travel" |
         "etc"
     )[];
 };
