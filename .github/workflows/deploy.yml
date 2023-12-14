@@ -21,6 +21,8 @@ jobs:
         MICROCMS_SERVICE_DOMAIN: ${{ secrets.MICROCMS_SERVICE_DOMAIN }}
         MICROCMS_API_KEY: ${{ secrets.MICROCMS_API_KEY }}
     steps:
+      - name: Show vars
+        run: echo "vars ----------------> $MICROCMS_SERVICE_DOMAIN"
       - name: Checkout your repository using git
         uses: actions/checkout@v3
       - name: Install, build, and upload your site
