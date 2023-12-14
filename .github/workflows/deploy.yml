@@ -17,16 +17,15 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env: 
-        MICROCMS_SERVICE_DOMAIN: ${{ secrets.MICROCMS_SERVICE_DOMAIN }}
-        MICROCMS_API_KEY: ${{ secrets.MICROCMS_API_KEY }}
     steps:
-      - name: Show vars
-        run: echo "vars ----------------> $MICROCMS_SERVICE_DOMAIN"
       - name: Checkout your repository using git
         uses: actions/checkout@v3
       - name: Install, build, and upload your site
         uses: withastro/action@v1    
+        env: 
+          MICROCMS_SERVICE_DOMAIN: ${{ secrets.MICROCMS_SERVICE_DOMAIN }}
+          MICROCMS_API_KEY: ${{ secrets.MICROCMS_API_KEY }}
+        
         # with:
           # path: . # リポジトリ内のAstroプロジェクトのルートロケーション。(オプション)
           # node-version: 18 # サイト構築に使用するNodeのバージョン。デフォルトは18です。（オプション）
