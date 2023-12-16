@@ -1,0 +1,29 @@
+---
+import BlogList from "../../components/BlogList.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+export async function getStaticPaths() {
+    return [
+        { params: { tagName: "izakaya" } },
+        { params: { tagName: "cooking" } },
+        { params: { tagName: "exercise" } },
+        { params: { tagName: "subculture" } },
+        { params: { tagName: "travel" } },
+        { params: { tagName: "etc" } },
+    ];
+}
+
+const { tagName } = Astro.params;
+---
+
+<BaseLayout>
+    <BlogList tagName={tagName} />
+</BaseLayout>
+
+<style>
+    main {
+        margin: auto;
+        padding: 1em;
+        max-width: 60ch;
+    }
+</style>

@@ -16,12 +16,12 @@ export type Blog = {
     content: string;
     tag: (
         "izakaya" |
-        "cooking" |
-        "exercise" |
-        "subculture" |
+        "cook" |
+        "sport" |
+        "anime" |
         "travel" |
         "etc"
-    )[];
+    );
 };
 export type BlogResponse = {
     totalCount: number;

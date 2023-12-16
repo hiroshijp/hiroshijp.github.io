@@ -1,16 +1,10 @@
 ---
 import BlogList from "../components/BlogList.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
-
-//microCMS呼び出し
-import { getBlogs, type Blog } from "../lib/microcms";
-const response = await getBlogs({
-	fields: ["id", "title"],
-});
 ---
 
 <BaseLayout>
-	<BlogList />
+	<BlogList tagName="" />
 </BaseLayout>
 
 <style>
