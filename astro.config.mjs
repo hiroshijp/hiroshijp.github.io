@@ -6,6 +6,6 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://hiroshijp.github.io',
-	base: '/mypage',
+	base: '/',
 	integrations: [mdx(), sitemap()],
 });
