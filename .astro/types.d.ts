@@ -151,6 +151,22 @@ declare module 'astro:content' {
   data: InferEntrySchema<"blog">
 } & { render(): Render[".mdx"] };
 };
+"draft": {
+"hc_custom_logger.md": {
+	id: "hc_custom_logger.md";
+  slug: "hc_custom_logger";
+  body: string;
+  collection: "draft";
+  data: any
+} & { render(): Render[".md"] };
+"hc_research.md": {
+	id: "hc_research.md";
+  slug: "hc_research";
+  body: string;
+  collection: "draft";
+  data: any
+} & { render(): Render[".md"] };
+};
 
 	};
 
