@@ -252,3 +252,6 @@ end
 
 
 ## 参考にした資料リン集まった
+- [Elixir GenServerのプロセスをどう管理するか](https://qiita.com/mnishiguchi/items/833a6e14511f084438d1)
+- [DynamicSupervisor と Registry を使ったプロセスの動的生成と管理](https://zenn.dev/keshihoriuchi/articles/103b8073b5cd95)
+- [チャネルのクライアントを実装する](https://zenn.dev/koga1020/books/phoenix-guide-ja-1-7/viewer/writing_a_channels_client)
