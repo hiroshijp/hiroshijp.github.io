@@ -81,3 +81,5 @@ Community Edition のようなソリューションの明らかな利点は、�
 - [有志が作ったCE版ができる前のセルフホストガイド](https://github.com/albirrkarim/mozilla-hubs-installation-detailed)
 - [(株)フレームシンセシス様のHubsCloudまとめ](https://tech.framesynthesis.co.jp/hubs/)
 - [HubsCloudドキュメント日本語訳](https://github.com/gree/hubs-docs-jp)
+- [CYZY SPACE様のVR空間デザインサンプル](https://cyzyspace.io/original/)
+- [東京大学がまとめたドキュメント](https://doc.vr.u-tokyo.ac.jp/docs/intro)
