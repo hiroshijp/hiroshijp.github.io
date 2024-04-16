@@ -24,33 +24,33 @@ MozillaHubsはMozillaがホストしているHubsCloudといった感じ
 
 
 ## Reticulumで使用される主要パッケージ
-### **phoenix**
+### [**phoenix**](https://hexdocs.pm/phoenix/overview.html)
 Webフレームワーク
-### **phoenix_pubsub**
+### [**phoenix_pubsub**](https://hexdocs.pm/phoenix_pubsub/Phoenix.PubSub.html)
 Phoenix向けのPub/Sub機能を提供
-### **ecto**
+### [**ecto**](https://hexdocs.pm/ecto/Ecto.html)
 RDBのORMで,クエリ発行やマイグレーションをしてくれる
-### **postgrex**
+### [**postgrex**](https://hexdocs.pm/postgrex/readme.html)
 elixir用のpostgresドライバー
-### **httpoison**
+### [**httpoison**](https://hexdocs.pm/httpoison/readme.html)
 httpクライアント
-### **cowboy**
+### [**cowboy**](https://hexdocs.pm/plug_cowboy/Plug.Cowboy.html)
 httpサーバー(phoenixと併用する)
-### **gettext**
+### [**gettext**](https://hexdocs.pm/gettext/Gettext.html)
 多言語化をサポート
 
 ## Hubs(adminも含む)で使用されている主要パッケージ
-### **react**
+### [**react**](https://www.npmjs.com/package/react)
 UIフレームワーク
-### **three.js**
+### [**three.js**](https://www.npmjs.com/package/three)
 WebGLベースの3Dオブジェクトレンダラー
-### **ammo.js**
+### [**ammo.js**](https://www.npmjs.com/package/ammojs3)
 wasmで書かれた物理エンジン,three-ammoパッケージでthree.jsと連携
-### **aframe**
+### [**aframe**](https://www.npmjs.com/package/aframe)
 three.jsのオブジェクトHTMLタグなどだけで扱えるようにした便利パッケージ,VRデバイスをサポートしている
-### **networked aframe**
+### [**networked aframe**](https://www.npmjs.com/package/networked-aframe)
 WebRTCまたはWebSocketを介してaframeでのエンティティ情報を共有しレンダリングしてくれる
-### **phoenix**
+### [**phoenix**](https://www.npmjs.com/package/phoenix)
 phoenixのクライアント用JSライブラリ,WebSocket通信用のモジュールなどを提供している
 
 ## 現在のHubsCloud
@@ -83,3 +83,4 @@ Community Edition のようなソリューションの明らかな利点は、�
 - [HubsCloudドキュメント日本語訳](https://github.com/gree/hubs-docs-jp)
 - [CYZY SPACE様のVR空間デザインサンプル](https://cyzyspace.io/original/)
 - [東京大学がまとめたドキュメント](https://doc.vr.u-tokyo.ac.jp/docs/intro)
+- [Mozilla HubsのバックエンドサーバーReticulumを改造する方法](https://zenn.dev/kou029w/articles/hubs-custom-reticulum)
