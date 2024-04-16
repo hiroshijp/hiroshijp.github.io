@@ -119,7 +119,7 @@ def phoenix_channel_handled_in(_, %{duration: duration}, %{socket: socket} = met
     end)
 end
 ```
-ログのフォーマットはPhowenixモジュールで定義されている. loggerモジュールを拡張したもの
+ログのフォーマットはPhoenixモジュールで定義されている. loggerモジュールを拡張したもの
 
 ## Reticulumを改造
 ### (1) 外部モジュールを追加
@@ -251,7 +251,7 @@ end
 - 集めたログファイルたちのバッチ処理を検討
 
 
-## 参考にした資料リン集まった
+## 参考にした資料まとめ
 - [Elixir GenServerのプロセスをどう管理するか](https://qiita.com/mnishiguchi/items/833a6e14511f084438d1)
 - [DynamicSupervisor と Registry を使ったプロセスの動的生成と管理](https://zenn.dev/keshihoriuchi/articles/103b8073b5cd95)
 - [チャネルのクライアントを実装する](https://zenn.dev/koga1020/books/phoenix-guide-ja-1-7/viewer/writing_a_channels_client)
