@@ -37,7 +37,7 @@ jobs:
         with:
           path: ./build
 
-      - name: Debug: show run id and list artifacts
+      - name: "Debug: show run id and list artifacts
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
